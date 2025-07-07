@@ -1,8 +1,8 @@
-#sk-510e40b434144be49c300664dabba372
+
 from openai import OpenAI
 from urllib3 import request
 
-client = OpenAI(api_key="sk-510e40b434144be49c300664dabba372", base_url="https://api.deepseek.com")
+client = OpenAI(api_key=os.environ.get('API_KEY'), base_url="https://api.deepseek.com")
 
 
 first_name_request = ("Определи, какие из этих слов могут быть именем:"
